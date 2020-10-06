@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>If Condition</p>
+
+<button onclick="Status()">Click</button>
+
+<p id="voting">
+
+<script>
+function Status() { 
+	var name = prompt ("Enter your name :");
+    if (name == "") {
+        status = "Name is not entered";
+    } else {
+        status = "Hello "+name + " and welcome";
+    }
+    document.getElementById("voting").innerHTML = status;
+}
+</script>
+
+</body>
+</html>

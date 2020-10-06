@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Array Looping</p>
+
+<button onclick="ArrayDisplay()">Clickme</button>
+
+<p> Array is sorted </p>
+<p id="ArrDisp"></p>
+<p> Array Reverse </p>
+<p id="Rev_ArrDisp"></p>
+
+<script>
+function ArrayDisplay() {
+    var i;
+    var text = "<ul>";
+    var arr = ["ABC", "DEF", "GHI", "JKL"];
+	arr.sort();
+    for (i = 0; i < arr.length; i++) {
+        text += "<li>" + arr[i] + "</li>";
+    }
+    text += "</ul>";
+    document.getElementById("ArrDisp").innerHTML = text;
+	
+	
+	
+	arr.reverse();	
+	text = "<ul>"; 
+    for (i = 0; i < arr.length; i++) {
+        text += "<li>" + arr[i] + "</li>";
+    }
+    text += "</ul>";
+	document.getElementById("Rev_ArrDisp").innerHTML = text;
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p> array looping and display the result...</p>
+
+<button onclick="DisplayArray()">Clickme</button>
+
+<p id="ArrDisp"></p>
+
+<script>
+function DisplayArray() {
+    var i;
+    var text = "<ul>";
+    var cities = ["ABC", "DEF", "GHI", "JKL"];
+    for (i = 0; i < cities.length; i++) {
+        text += "<li>" + cities[i] + "</li>";
+    }
+    text += "</ul>";
+    document.getElementById("ArrDisp").innerHTML = text;
+}
+</script>
+
+</body>
+</html>

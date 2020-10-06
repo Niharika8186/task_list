@@ -1,0 +1,16 @@
+<DOCTYPE html>
+<html>
+<body>
+<p>Computed sal is :</p>
+<p id = "salary"></p>
+<script>
+function ComputedSalary(basic , hra , da , deductions)
+{
+var gross_salary = basic + hra + da;
+var total_salary = gross_salary - deductions;
+return total_salary;
+}
+document.getElementById("salary").innerHTML = ComputedSalary(1000,500,500,600);
+</script>
+</body>
+</html>
